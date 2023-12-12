@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  access_key = "<access-key>"
-  secret_key = "<secret-key>"
+  access_key = "<accesskey>"
+  secret_key = "secretkey"
   region     = "ap-south-2"
 }
