@@ -69,7 +69,7 @@ resource "aws_db_subnet_group" "default" {
 
 ```
 **create the db-instance**
-```json
+```diff
 resource "aws_db_instance" "rds2" {
   allocated_storage = 20
   db_name           = "terraform_db_2"
