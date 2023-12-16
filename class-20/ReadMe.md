@@ -13,7 +13,7 @@ provisioners,   for each,   count,  lifecycle,      provider, connection, variab
 - generating Random passowords
 - Saving passwords to secret manager
 
-`rgb(**Pre-requisites**)`
+**Pre-requisites**
 Create resources using the terraform
 - VPC
 - public/private subnets,IGW,NGW(private-subnets)
@@ -27,8 +27,7 @@ Create resources using the terraform
 
 Generate the random password in secrets-manager,
 one can also enable the rotation of passwords..
-```
-
+```diff
 resource "random_password" "password" {
   length           = 16
   special          = true
@@ -57,7 +56,7 @@ EOF
 ```
 
 Create the Subnet group
-```
+```diff
 resource "aws_db_subnet_group" "default" {
   name       = "rds-subnet-group"
   subnet_ids = [aws_subnet.subnet1-public.id, aws_subnet.subnet2-public.id, aws_subnet.subnet3-public.id]
@@ -70,7 +69,7 @@ resource "aws_db_subnet_group" "default" {
 
 ```
 **create the db-instance**
-```
+```json
 resource "aws_db_instance" "rds2" {
   allocated_storage = 20
   db_name           = "terraform_db_2"
