@@ -5,19 +5,23 @@
 provisioners,   for each,   count,  lifecycle,      provider, connection, variable,   output, locals,     depends_on
 ``` 
 
-We will be talking about lifecycle,..
-    -create resource before destroying
-	-prevent destroy
-	-ignore changes
+We will be talking about..
+- create resource before destroying
+- prevent destroy
+- ignore changes
+- How to deal with sensitive information in AWS
+- generating Random passowords
+- Saving passwords to secret manager
 
 **Pre-requisites**
 Create resources using the terraform
-        - VPC
-        -public/private subnets,IGW,NGW(private-subnets)
-        -route-table,route-table-association-subnet
-        -backend.tf for state file
-        -secuirty group
-        -s3-buckets for data backups and choose the lifecycle based on the requirements
+- VPC
+- public/private subnets,IGW,NGW(private-subnets)
+- route-table,route-table-association-subnet
+- backend.tf for state file
+- secuirty group
+- s3-buckets for data backups and choose the        lifecycle based on the requirements
+
         
 ##  create Mysql data-base use of secrets manager.
 
