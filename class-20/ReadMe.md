@@ -4,8 +4,8 @@
 ```
 provisioners,   for each,   count,  lifecycle,      provider, connection, variable,   output, locals,     depends_on
 ``` 
-:hii:
-We will be talking about..
+
+**We will be talking about..**
 - create resource before destroying
 - prevent destroy
 - ignore changes
