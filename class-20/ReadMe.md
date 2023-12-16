@@ -91,9 +91,9 @@ resource "aws_db_instance" "rds2" {
 }
 
 ```
--- terraform init
--- terraform fmt;terraform validate
--- terraform apply -auto-approve
+terraform init
+terraform fmt;terraform validate
+terraform apply -auto-approve
 
 **Note**
 1) please note that while after apply the state file in s3 will load the username and passowrd as plain text,so it leads to breach of confidentiality,so implement the least privilege for the s3-state file bucket access..
