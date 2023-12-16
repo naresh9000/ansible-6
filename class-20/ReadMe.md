@@ -13,7 +13,7 @@ provisioners,   for each,   count,  lifecycle,      provider, connection, variab
 - generating Random passowords
 - Saving passwords to secret manager
 
-**Pre-requisites**
+`rgb(**Pre-requisites**)`
 Create resources using the terraform
 - VPC
 - public/private subnets,IGW,NGW(private-subnets)
